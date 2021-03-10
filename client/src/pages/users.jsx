@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SignIn from "../components/signIn/signIn";
 
 const UsersPage = () => {
   return (
@@ -17,6 +18,8 @@ const UsersPage = () => {
           return <li key={idx}>{user}</li>;
         })}
       </ul>
+      <br />
+      <SignIn />
       <br />
       <Link to="/">Back to Main page</Link>
     </div>
