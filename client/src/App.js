@@ -10,6 +10,7 @@ import {
 // Pages
 import MainPage from "./pages";
 import SignInPage from "./pages/signIn";
+import SignUpPage from "./pages/signUp";
 import NotFoundPage from "./pages/404";
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route exact path="/signIn" component={SignInPage} />
+          <Route exact path="/signUp" component={SignUpPage} />
           <Route exact path="/404" component={NotFoundPage} />
           <Redirect to="/404" />
         </Switch>

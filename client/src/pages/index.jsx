@@ -8,6 +8,8 @@ const MainPage = () => {
       <h3>Welcome to TrekTracker AT Edition</h3>
       <br />
       <Link to="/signIn">Sign In</Link>
+      <br />
+      <Link to="/signUp">Sign Up</Link>
     </div>
   );
 };
