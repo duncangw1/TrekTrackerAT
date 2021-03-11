@@ -7,7 +7,7 @@ const MainPage = () => {
       <small>Main Page</small>
       <h3>Welcome to TrekTracker AT Edition</h3>
       <br />
-      <Link to="/users">Show List of Users</Link>
+      <Link to="/signIn">Sign In</Link>
     </div>
   );
 };
