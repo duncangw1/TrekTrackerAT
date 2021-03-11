@@ -7,7 +7,7 @@ const SignInPage = () => {
   return (
     <div>
       <Link to="/">
-        <HomeIcon />
+        <HomeIcon fontSize="large" />
       </Link>
       <SignIn />
     </div>
