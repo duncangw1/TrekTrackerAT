@@ -10,6 +10,8 @@ const MainPage = () => {
       <Link to="/signIn">Sign In</Link>
       <br />
       <Link to="/signUp">Sign Up</Link>
+      <br />
+      <Link to="/dashboard">Dashboard</Link>
     </div>
   );
 };

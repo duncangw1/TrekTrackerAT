@@ -18,10 +18,10 @@ import Link from "@material-ui/core/Link";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import NotificationsIcon from "@material-ui/icons/Notifications";
-import { mainListItems, secondaryListItems } from "./listItems";
-import Chart from "./Chart";
-import Deposits from "./Deposits";
-import Orders from "./Orders";
+import { mainListItems, secondaryListItems } from "../listItems/listItems";
+import Chart from "../chart/chart";
+import RecentHike from "../recentHike/recentHike";
+import HikesTable from "../hikesTable/hikesTable";
 
 function Copyright() {
   return (
@@ -191,16 +191,16 @@ export default function Dashboard() {
                 <Chart />
               </Paper>
             </Grid>
-            {/* Recent Deposits */}
+            {/* Recent RecentHike */}
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Deposits />
+                <RecentHike />
               </Paper>
             </Grid>
-            {/* Recent Orders */}
+            {/* Recent HikesTable */}
             <Grid item xs={12}>
               <Paper className={classes.paper}>
-                <Orders />
+                <HikesTable />
               </Paper>
             </Grid>
           </Grid>
