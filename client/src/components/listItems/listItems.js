@@ -9,6 +9,14 @@ import PeopleIcon from "@material-ui/icons/People";
 import BarChartIcon from "@material-ui/icons/BarChart";
 import LayersIcon from "@material-ui/icons/Layers";
 import AssignmentIcon from "@material-ui/icons/Assignment";
+import MapIcon from "@material-ui/icons/Map";
+import HistoryIcon from "@material-ui/icons/History";
+import AddCircleIcon from "@material-ui/icons/AddCircle";
+import EditIcon from "@material-ui/icons/Edit";
+import DeleteIcon from "@material-ui/icons/Delete";
+import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
+import UpdateIcon from "@material-ui/icons/Update";
+import ContactSupportIcon from "@material-ui/icons/ContactSupport";
 
 export const mainListItems = (
   <div>
@@ -20,51 +28,69 @@ export const mainListItems = (
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <MapIcon />
       </ListItemIcon>
-      <ListItemText primary="Orders" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <PeopleIcon />
-      </ListItemIcon>
-      <ListItemText primary="Customers" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <BarChartIcon />
-      </ListItemIcon>
-      <ListItemText primary="Reports" />
+      <ListItemText primary="Progress Map" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
-      <ListItemText primary="Integrations" />
+      <ListItemText primary="State Overview" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <HistoryIcon />
+      </ListItemIcon>
+      <ListItemText primary="Hiking History" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <PeopleIcon />
+      </ListItemIcon>
+      <ListItemText primary="Compare Users" />
     </ListItem>
   </div>
 );
 
 export const secondaryListItems = (
   <div>
-    <ListSubheader inset>Saved reports</ListSubheader>
+    <ListSubheader inset>Actions</ListSubheader>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <AddCircleIcon />
       </ListItemIcon>
-      <ListItemText primary="Current month" />
+      <ListItemText primary="Add New Hike(s)" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <EditIcon />
       </ListItemIcon>
-      <ListItemText primary="Last quarter" />
+      <ListItemText primary="Edit Hike(s)" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <DeleteIcon />
       </ListItemIcon>
-      <ListItemText primary="Year-end sale" />
+      <ListItemText primary="Delete Hike(s)" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <InsertDriveFileIcon />
+      </ListItemIcon>
+      <ListItemText primary="Create CSV" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <UpdateIcon />
+      </ListItemIcon>
+      <ListItemText primary="Update User Info" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <ContactSupportIcon />
+      </ListItemIcon>
+      <ListItemText primary="Contact Admin" />
     </ListItem>
   </div>
 );
