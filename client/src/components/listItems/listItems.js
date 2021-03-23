@@ -18,22 +18,22 @@ import { Link } from "react-router-dom";
 
 export const mainListItems = (
   <div>
-    <ListItem button>
-      <ListItemIcon>
-        <DashboardIcon />
-      </ListItemIcon>
-      <Link to="/dashboard">
+    <Link to="/dashboard">
+      <ListItem button>
+        <ListItemIcon>
+          <DashboardIcon />
+        </ListItemIcon>
         <ListItemText primary="Dashboard" />
-      </Link>
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <MapIcon />
-      </ListItemIcon>
-      <Link to="/progress-map">
+      </ListItem>
+    </Link>
+    <Link to="/progress-map">
+      <ListItem button>
+        <ListItemIcon>
+          <MapIcon />
+        </ListItemIcon>
         <ListItemText primary="Progress Map" />
-      </Link>
-    </ListItem>
+      </ListItem>
+    </Link>
     <ListItem button>
       <ListItemIcon>
         <LayersIcon />
