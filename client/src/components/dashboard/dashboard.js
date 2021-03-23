@@ -14,7 +14,7 @@ import Badge from "@material-ui/core/Badge";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import Link from "@material-ui/core/Link";
+// import Link from "@material-ui/core/Link";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import NotificationsIcon from "@material-ui/icons/Notifications";
@@ -22,6 +22,8 @@ import { mainListItems, secondaryListItems } from "../listItems/listItems";
 import Chart from "../chart/chart";
 import RecentHike from "../recentHike/recentHike";
 import HikesTable from "../hikesTable/hikesTable";
+import { Link } from "react-router-dom";
+import HomeIcon from "@material-ui/icons/Home";
 
 function Copyright() {
   return (
@@ -158,9 +160,9 @@ export default function Dashboard() {
             Dashboard
           </Typography>
           <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
+            <Link to="/">
+              <HomeIcon fontSize="large" />
+            </Link>
           </IconButton>
         </Toolbar>
       </AppBar>
