@@ -13,6 +13,7 @@ import SignInPage from "./pages/signIn";
 import SignUpPage from "./pages/signUp";
 import DashboardPage from "./pages/dashboard";
 import NotFoundPage from "./pages/404";
+import ProgressMapPage from "./pages/progressMap";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
           <Route exact path="/signIn" component={SignInPage} />
           <Route exact path="/signUp" component={SignUpPage} />
           <Route exact path="/dashboard" component={DashboardPage} />
+          <Route exact path="/progress-map" component={ProgressMapPage} />
           <Route exact path="/404" component={NotFoundPage} />
           <Redirect to="/404" />
         </Switch>

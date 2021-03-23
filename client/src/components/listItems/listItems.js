@@ -14,6 +14,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
 import UpdateIcon from "@material-ui/icons/Update";
 import ContactSupportIcon from "@material-ui/icons/ContactSupport";
+import { Link } from "react-router-dom";
 
 export const mainListItems = (
   <div>
@@ -21,13 +22,17 @@ export const mainListItems = (
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <ListItemText primary="Dashboard" />
+      <Link to="/dashboard">
+        <ListItemText primary="Dashboard" />
+      </Link>
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <MapIcon />
       </ListItemIcon>
-      <ListItemText primary="Progress Map" />
+      <Link to="/progress-map">
+        <ListItemText primary="Progress Map" />
+      </Link>
     </ListItem>
     <ListItem button>
       <ListItemIcon>
