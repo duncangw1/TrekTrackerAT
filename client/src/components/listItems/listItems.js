@@ -34,12 +34,14 @@ export const mainListItems = (
         <ListItemText primary="Progress Map" />
       </ListItem>
     </Link>
-    <ListItem button>
-      <ListItemIcon>
-        <LayersIcon />
-      </ListItemIcon>
-      <ListItemText primary="State Overview" />
-    </ListItem>
+    <Link to="/state-overview">
+      <ListItem button>
+        <ListItemIcon>
+          <LayersIcon />
+        </ListItemIcon>
+        <ListItemText primary="State Overview" />
+      </ListItem>
+    </Link>
     <ListItem button>
       <ListItemIcon>
         <HistoryIcon />
