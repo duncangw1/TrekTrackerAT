@@ -15,6 +15,7 @@ import DashboardPage from "./pages/dashboard";
 import NotFoundPage from "./pages/404";
 import ProgressMapPage from "./pages/progressMap";
 import StateOverviewPage from "./pages/stateOverview";
+import HikingHistoryPage from "./pages/hikingHistory";
 
 class App extends Component {
   render() {
@@ -27,6 +28,7 @@ class App extends Component {
           <Route exact path="/dashboard" component={DashboardPage} />
           <Route exact path="/progress-map" component={ProgressMapPage} />
           <Route exact path="/state-overview" component={StateOverviewPage} />
+          <Route exact path="/hiking-history" component={HikingHistoryPage} />
           <Route exact path="/404" component={NotFoundPage} />
           <Redirect to="/404" />
         </Switch>

@@ -42,12 +42,14 @@ export const mainListItems = (
         <ListItemText primary="State Overview" />
       </ListItem>
     </Link>
-    <ListItem button>
-      <ListItemIcon>
-        <HistoryIcon />
-      </ListItemIcon>
-      <ListItemText primary="Hiking History" />
-    </ListItem>
+    <Link to="/hiking-history">
+      <ListItem button>
+        <ListItemIcon>
+          <HistoryIcon />
+        </ListItemIcon>
+        <ListItemText primary="Hiking History" />
+      </ListItem>
+    </Link>
     <ListItem button>
       <ListItemIcon>
         <PeopleIcon />
